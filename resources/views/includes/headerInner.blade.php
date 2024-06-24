@@ -18,24 +18,24 @@
 									<nav class="navigation">
 										<ul class="nav menu">
 											<!-- <li class="active"><a href="#">Home <i class="icofont-rounded-down"></i></a> -->
-											<li class="{{Request::is('home')? 'active':''}}"><a href="{{route('home')}}">Home <i class="icofont-rounded-down"></i></a>
+											<li class="{{Request::is('home')? 'active':''}}"><a href="{{route('home')}}">{{ __('messages.Home') }}  <i class="icofont-rounded-down"></i></a>
 											<ul class="dropdown">
 													<li><a href="index.html">Home Page 1</a></li>
 												</ul>
 											</li>
-											<li><a href="#">Doctos </a></li>
-											<li><a href="#">Services </a></li>
-											<li><a href="#">Pages <i class="icofont-rounded-down"></i></a>
+											<li><a href="#">{{ __('messages.Doctors') }} </a></li>
+											<li><a href="#">{{ __('messages.Services') }} </a></li>
+											<li><a href="#">{{ __('messages.Pages') }} <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
-													<li><a href="404">404 Error</a></li>
+													<li><a href="404">{{ __('messages.404_Error') }}</a></li>
 												</ul>
 											</li>
-											<li><a href="#">Blogs <i class="icofont-rounded-down"></i></a>
+											<li><a href="#">{{ __('messages.Blogs') }} <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
-													<li><a href="blog-single.html">Blog Details</a></li>
+													<li><a href="blog-single.html">{{ __('messages.Blog_Details') }}</a></li>
 												</ul>
 											</li>
-											<li><li class="{{Request::is('contactUs')? 'active':''}}"><a href="{{route('contactUs')}}">Contact Us <i class="icofont-rounded-down"></i></a>
+											<li><li class="{{Request::is('contactUs')? 'active':''}}"><a href="{{route('contactUs')}}">{{ __('messages.Contact_us') }} <i class="icofont-rounded-down"></i></a>
 											<ul class="dropdown">
 												<!-- <a href="contactUs">Contact Us</a></li> -->
 										</ul>
@@ -45,7 +45,7 @@
 							</div>
 							<div class="col-lg-2 col-12">
 								<div class="get-quote">
-									<a href="appointment.html" class="btn">Book Appointment</a>
+									<a href="appointment.html" class="btn">{{ __('messages.Book_Appointment') }}</a>
 								</div>
 							</div>
 						</div>
